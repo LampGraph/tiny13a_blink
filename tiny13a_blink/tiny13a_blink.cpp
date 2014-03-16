@@ -15,12 +15,13 @@ int main(void) {
 
 	// Configure LED_PIN (PB4) as output
 	DDRB |= (1 << LED_PIN);
-
+	
 	while (1) {
-		PORTB |= (1 << LED_PIN);
-		_delay_ms(500);
-		PORTB &= ~(1 << LED_PIN);
-		_delay_ms(500);
+		
+			PORTB |= (1 << LED_PIN);
+			_delay_ms(50);
+			PORTB &= ~(1 << LED_PIN);
+			_delay_ms(138);		
 	}
 
 	return 0;

@@ -18,9 +18,9 @@ int main(void) {
 
 	while (1) {
 		PORTB |= (1 << LED_PIN);
-		_delay_ms(500);
+		_delay_ms(833);
 		PORTB &= ~(1 << LED_PIN);
-		_delay_ms(500);
+		_delay_ms(50);
 	}
 
 	return 0;
